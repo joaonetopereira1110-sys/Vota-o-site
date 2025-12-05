@@ -50,4 +50,4 @@ function verResultados() {
 function fecharResultado() {
     const popup = document.getElementById("resultado-final");
     popup.classList.add("hidden");
-        }
+                                 }
