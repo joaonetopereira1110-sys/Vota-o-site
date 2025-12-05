@@ -48,8 +48,9 @@ function verResultados() {
 }
 
 function fecharResultado() {
-    document.getElementById("resultado-final").classList.add("hidden");
-          }
+    const popup = document.getElementById("resultado-final");
+    popup.classList.add("hidden");
+}
 
 document.addEventListener("click", function(e) {
     if (e.target.id === "closeFinal") {
