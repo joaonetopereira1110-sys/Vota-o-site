@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votação - 5 Grupos | 2 Rodadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">Sistema de Votação</h1>
+    <h2 class="subtitle">5 Grupos • 2 Rodadas</h2>
+
+    <div id="rodada-info" class="rodada-box">Rodada: <span id="rodada-num">1</span></div>
+
+    <div class="groups">
+        <button class="group-btn" onclick="votar(0)">Grupo A</button>
+        <button class="group-btn" onclick="votar(1)">Grupo B</button>
+        <button class="group-btn" onclick="votar(2)">Grupo C</button>
+        <button class="group-btn" onclick="votar(3)">Grupo D</button>
+        <button class="group-btn" onclick="votar(4)">Grupo E</button>
+    </div>
+
+    <button class="reset-btn" onclick="resetar()">Resetar Votação</button>
+
+    <h3>Acesso do Dono</h3>
+    <input type="password" id="senha" placeholder="Digite a senha">
+    <button onclick="verResultados()">Ver Resultados</button>
+
+</div>
+
+<div id="resultado-final" class="resultado hidden">
+    <h1>Resultado Final</h1>
+    <p id="resultado-texto"></p>
+    <button onclick="fecharResultado()">Fechar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+          </html>
