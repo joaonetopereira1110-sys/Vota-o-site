@@ -50,11 +50,4 @@ function verResultados() {
 function fecharResultado() {
     const popup = document.getElementById("resultado-final");
     popup.classList.add("hidden");
-}
-
-document.addEventListener("click", function(e) {
-    if (e.target.id === "closeFinal") {
-        const popup = document.getElementById("finalPopup");
-        if (popup) popup.style.display = "none";
-    }
-});
+        }
